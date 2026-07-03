@@ -19,7 +19,7 @@ export default function AdminLogin() {
       setLoading(true);
 
       const response = await fetch(
-        "http://localhost:5000/api/admin/login",
+        "https://mislona-backend.onrender.com/api/admin/login",
         {
           method: "POST",
           headers: {

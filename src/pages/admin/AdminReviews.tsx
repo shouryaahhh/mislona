@@ -50,7 +50,7 @@ export default function AdminReviews() {
       const token = localStorage.getItem("adminToken");
 
       const response = await fetch(
-        "http://localhost:5000/api/admin/reviews",
+        "https://mislona-backend.onrender.com/api/admin/reviews",
         {
           headers: {
             Authorization: `Bearer ${token}`,

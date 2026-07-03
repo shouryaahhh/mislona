@@ -37,7 +37,7 @@ const handleSubmit = async (e: React.FormEvent) => {
 
   setSubmitting(true);
 
-  const res = await fetch("http://localhost:5000/api/distributors", {
+  const res = await fetch("https://mislona-backend.onrender.com/api/distributors", {
     method: "POST",
     headers: {
       "Content-Type": "application/json",

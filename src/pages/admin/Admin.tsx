@@ -23,7 +23,7 @@ async function loadStats() {
   try {
     // Dashboard statistics
     const statsResponse = await fetch(
-      "http://localhost:5000/api/admin/dashboard",
+      "https://mislona-backend.onrender.com/api/admin/dashboard",
       {
         headers: {
           Authorization: `Bearer ${token}`,

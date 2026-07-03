@@ -24,7 +24,7 @@ export default function AdminDistributors() {
 
   async function loadDistributors() {
     try {
-      const res = await fetch("http://localhost:5000/api/distributors");
+      const res = await fetch("https://mislona-backend.onrender.com/api/distributors");
       const data = await res.json();
 
       if (!res.ok) {

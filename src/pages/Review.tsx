@@ -35,7 +35,7 @@ const submitReview = async () => {
 
   try {
     const response = await fetch(
-      "http://localhost:5000/api/reviews",
+      "https://mislona-backend.onrender.com/api/reviews",
       {
         method: "POST",
         headers: {
