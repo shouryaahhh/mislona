@@ -23,7 +23,6 @@ function HomePage() {
 
       <main>
         <Hero />
-
         <Products />
         <WhyMislona />
         <Manufacturing />
@@ -43,52 +42,60 @@ export default function App() {
         {/* Website */}
         <Route path="/" element={<HomePage />} />
 
-        {/* public  Flow */}
+        {/* Public Review */}
         <Route path="/review" element={<Review />} />
-        <Route path="/admin/login" element={<AdminLogin />} />
+
+        {/* Secret Admin Login */}
         <Route
-  path="/admin"
-  element={
-    <ProtectedAdminRoute>
-      <AdminDashboard />
-    </ProtectedAdminRoute>
-  }
-/>
-<Route
-  path="/admin/reviews"
-  element={
-    <ProtectedAdminRoute>
-      <AdminReviews />
-    </ProtectedAdminRoute>
-  }
-/>
+          path="/mislona-detergent-admin-94100/login"
+          element={<AdminLogin />}
+        />
 
-<Route
-  path="/admin/analytics"
-  element={
-    <ProtectedAdminRoute>
-      <AdminAnalytics />
-    </ProtectedAdminRoute>
-  }
-/>
+        {/* Protected Admin Dashboard */}
+        <Route
+          path="/mislona-detergent-admin-94100"
+          element={
+            <ProtectedAdminRoute>
+              <AdminDashboard />
+            </ProtectedAdminRoute>
+          }
+        />
 
-<Route
-  path="/admin/settings"
-  element={
-    <ProtectedAdminRoute>
-      <AdminSettings />
-    </ProtectedAdminRoute>
-  }
-/>
+        <Route
+          path="/mislona-detergent-admin-94100/reviews"
+          element={
+            <ProtectedAdminRoute>
+              <AdminReviews />
+            </ProtectedAdminRoute>
+          }
+        />
 
-<Route
-  path="/admin/distributors"
-  element={
-    <ProtectedAdminRoute>
-      <AdminDistributors />
-    </ProtectedAdminRoute>
-  }
-/>
+        <Route
+          path="/mislona-detergent-admin-94100/analytics"
+          element={
+            <ProtectedAdminRoute>
+              <AdminAnalytics />
+            </ProtectedAdminRoute>
+          }
+        />
+
+        <Route
+          path="/mislona-detergent-admin-94100/settings"
+          element={
+            <ProtectedAdminRoute>
+              <AdminSettings />
+            </ProtectedAdminRoute>
+          }
+        />
+
+        <Route
+          path="/mislona-detergent-admin-94100/distributors"
+          element={
+            <ProtectedAdminRoute>
+              <AdminDistributors />
+            </ProtectedAdminRoute>
+          }
+        />
       </Routes>
     </BrowserRouter>
   );

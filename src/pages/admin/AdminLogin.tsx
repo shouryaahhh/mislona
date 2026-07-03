@@ -41,7 +41,7 @@ export default function AdminLogin() {
 
       localStorage.setItem("adminToken", data.token);
 
-      navigate("/admin");
+      navigate("/mislona-detergent-admin-94100");
 
     } catch (err) {
       console.error(err);

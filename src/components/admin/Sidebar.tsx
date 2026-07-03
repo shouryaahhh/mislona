@@ -12,28 +12,28 @@ const menu = [
   {
     icon: LayoutDashboard,
     label: "Dashboard",
-    path: "/admin",
+    path: "/mislona-detergent-admin-94100",
   },
   {
     icon: Star,
     label: "Reviews",
-    path: "/admin/reviews",
+    path: "/mislona-detergent-admin-94100/reviews",
   },
   {
     icon: BarChart3,
     label: "Analytics",
-    path: "/admin/analytics",
+    path: "/mislona-detergent-admin-94100/analytics",
   },
   {
     icon: Settings,
     label: "Settings",
-    path: "/admin/settings",
+    path: "/mislona-detergent-admin-94100/settings",
   },
   {
-  icon: Store,
-  label: "Distributors",
-  path: "/admin/distributors",
-},
+    icon: Store,
+    label: "Distributors",
+    path: "/mislona-detergent-admin-94100/distributors",
+  },
 ];
 
 export default function Sidebar() {
@@ -42,7 +42,7 @@ export default function Sidebar() {
 const handleLogout = () => {
 localStorage.removeItem("adminToken"); 
 
-navigate("/admin/login");
+navigate("/mislona-detergent-admin-94100/login");
 };
   return (
     <aside className="w-64 bg-slate-900 text-white flex flex-col">
