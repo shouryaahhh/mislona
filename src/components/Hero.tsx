@@ -80,10 +80,10 @@ export default function Hero() {
                 <ArrowRight size={16} className="group-hover:translate-x-1 transition-transform" />
               </a>
               <a
-                href="/reviews"
-                className="inline-flex items-center justify-center gap-2 border-2 border-white/40 text-white font-semibold px-8 py-4 rounded-full hover:bg-white/10 transition-all duration-200"
+                href="#distributors"
+                className="inline-flex items-center justify-center gap-2 border-2 border-white/40 text-white font-semibold px-8 py-4 rounded-full hover:bg-white/10 hover:border-brand-sky-light transition-all duration-200"
               >
-                Read Reviews
+                Become Distributor
               </a>
             </div>
             {/* Available Packs */}
