@@ -4,7 +4,7 @@ const navLinks = [
   { label: 'Products', href: '#products' },
   { label: 'Why Mislona', href: '#why' },
   { label: 'Manufacturing', href: '#manufacturing' },
-  { label: 'Reviews', href: '/reviews' },
+  { label: 'Reviews', href: '/review' },
   { label: 'Distributors', href: '#distributors' },
   { label: 'Contact', href: '#contact' },
 ];
