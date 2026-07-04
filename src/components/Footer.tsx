@@ -44,14 +44,14 @@ export default function Footer() {
                 <MessageCircle size={15} />
               </a>
               <a
-                href="tel:+919876543210"
+                href="tel:+919837042508"
                 className="w-9 h-9 rounded-full bg-white/10 hover:bg-brand-blue flex items-center justify-center transition-colors duration-200"
                 aria-label="Phone"
               >
                 <Phone size={15} />
               </a>
               <a
-                href="mailto:info@mislona.in"
+                href="mailto:mislonateam@gmail.com"
                 className="w-9 h-9 rounded-full bg-white/10 hover:bg-brand-magenta flex items-center justify-center transition-colors duration-200"
                 aria-label="Email"
               >
@@ -80,16 +80,30 @@ export default function Footer() {
 
           {/* Products */}
           <div>
-            <h4 className="text-xs font-bold tracking-[0.15em] uppercase text-white/50 mb-5">Pack Sizes</h4>
-            <ul className="space-y-3">
-              {['200g Trial Pack', '500g Small Pack', '1kg Standard Pack', '2kg Value Pack', '5kg Economy Pack'].map((p) => (
-                <li key={p}>
-                  <a href="#products" className="text-sm text-white/70 hover:text-white transition-colors duration-200">
-                    {p}
-                  </a>
-                </li>
-              ))}
-            </ul>
+            <h4 className="text-xs font-bold tracking-[0.15em] uppercase text-white/50 mb-5">
+              Our Products
+            </h4>
+            <ul className="grid grid-cols-2 gap-y-3 gap-x-4">
+            {[
+              'Detergent Powder',
+              'Liquid Detergent',
+              'Toilet Cleaner',
+              'Phenyl',
+              'Dishwash Liquid',
+              'Dishwash Cake',
+              'Hand Wash',
+              'Washing Cake',
+            ].map((product) => (
+              <li key={product}>
+                <a
+                  href="#products"
+                  className="text-sm text-white/70 hover:text-white transition-colors duration-200"
+                >
+                  {product}
+                </a>
+              </li>
+            ))}
+          </ul>
           </div>
 
           {/* Contact */}
@@ -99,14 +113,14 @@ export default function Footer() {
               <li className="flex items-start gap-3">
                 <Phone size={14} className="text-brand-sky mt-0.5 flex-shrink-0" />
                 <div>
-                  <div className="text-sm text-white/80">+91 98765 43210</div>
+                  <div className="text-sm text-white/80">+91 9837042508</div>
                   <div className="text-xs text-white/40">Mon – Sat, 9 AM – 6 PM</div>
                 </div>
               </li>
               <li className="flex items-start gap-3">
                 <Mail size={14} className="text-brand-sky mt-0.5 flex-shrink-0" />
                 <div>
-                  <div className="text-sm text-white/80">info@mislona.in</div>
+                  <div className="text-sm text-white/80">mislonateam@gmial.com</div>
                   <div className="text-xs text-white/40">Reply within 24 hours</div>
                 </div>
               </li>
