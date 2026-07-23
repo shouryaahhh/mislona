@@ -15,7 +15,7 @@ const contacts = [
     label: 'WhatsApp',
     value: '+91 63980 16560',
     sub: 'Quick response guaranteed',
-    href: 'https://wa.me/919876543210',
+    href: 'https://wa.me/916398016560',
     color: 'bg-green-600',
   },
   {
