@@ -15,6 +15,7 @@ import AdminSettings from "./pages/admin/AdminSettings";
 import AdminDistributors from "./pages/admin/AdminDistributors";
 import AdminLogin from "./pages/admin/AdminLogin";
 import ProtectedAdminRoute from "./components/admin/ProtectedAdminRoute";
+import { Analytics } from "@vercel/analytics/react";
 
 function HomePage() {
   return (
@@ -97,6 +98,9 @@ export default function App() {
           }
         />
       </Routes>
+
+      {/* Vercel Analytics */}
+      <Analytics />
     </BrowserRouter>
   );
 }
