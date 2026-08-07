@@ -7,7 +7,7 @@ const contacts = [
     label: 'Phone',
     value: '+91 9837042508',
     sub: 'Mon – Sat, 9 AM – 6 PM',
-    href: 'tel:+919876543210',
+    href: 'tel:+919837042508',
     color: 'bg-brand-blue',
   },
   {
